@@ -6,18 +6,20 @@ class MyStack:
 
     def push(self, x: int) -> None:
         self.d.append(x)
+        for _ in range(len(self.d)-1):
+            self.d.append(self.d.popleft())
         
 
     def pop(self) -> int:
-        return self.d.pop()
+        return self.d.popleft()
         
 
     def top(self) -> int:
-        return self.d[-1]
+        return self.d[0]
         
 
     def empty(self) -> bool:
-        return  len(self.d)==0
+        return not self.d
         
 
 
