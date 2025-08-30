@@ -1,1 +1,1 @@
-<h2>maximum-subarray Notes</h2><hr>[ Time taken: 26 m 33 s ]
+<h2>maximum-subarray Notes</h2><hr>[ Time taken: 6 m 40 s ]
