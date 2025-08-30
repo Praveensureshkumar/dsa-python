@@ -4,10 +4,11 @@ class Solution:
         result=0
         for i in nums:
             result+=i
-            if result>max_sum:
+            if result > max_sum:
                 max_sum=result
-            if result<0:
+            if result <0:
                 result=0
         return max_sum
-            
+
+
         
