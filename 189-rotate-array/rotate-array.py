@@ -3,7 +3,13 @@ class Solution:
         """
         Do not return anything, modify nums in-place instead.
         """
-        for i in range(k):
-            value=nums.pop()
-            nums.insert(0,value)
-        return nums
+        k%=len(nums)
+
+        def rotations(left,right):
+            while left<right:
+                nums[left],nums[right]=nums[right],nums[left]
+                left+=1
+                right-=1
+        rotations(0,len(nums)-1)
+        rotations(0,k-1)
+        rotations(k,len(nums)-1)
