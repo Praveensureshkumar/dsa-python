@@ -23,7 +23,7 @@ class Solution:
 
             return root
         
-        return find(0,len(inorder)-1)
+        return find(0,len(preorder)-1)
         
             
 
